@@ -4,7 +4,7 @@ Getting Started
 Live Demo
 *********
 
-If you'd like to check out a demo of DefectDojo before installing it, you can check out on our `Heroku demo site`_.
+If you'd like to check out a demo of DefectDojo before installing it, you can check it out on our `Heroku demo site`_.
 
 .. _Heroku demo site: https://defectdojo.herokuapp.com/
 
@@ -32,7 +32,7 @@ Docker Compose Install
 
       $ git clone https://github.com/DefectDojo/django-DefectDojo
 
-#. Change directories into the newly created folder.
+#. Change directories into the newly created folder:
 
    .. code-block:: shell-session
 
@@ -40,7 +40,7 @@ Docker Compose Install
 
 #. Run Docker Compose:
     
-    To run docker-DefectDojo and voew the logs in the terminal, use:
+    To run docker-DefectDojo and view the logs in the terminal, use:
         
     .. code-block:: shell-session
         
@@ -72,14 +72,14 @@ There is a script in the main folder called ``setup.bash`` that will allow you t
 * MySQL
 * pip
 
-**Recommended**
+**Recommended:**
 * virtualenv
 
 1. If you haven't already, run ``mysql_secure_install`` to set a password for your root MySQL user.
 
 2. Create a MySQL user with CREATE privileges, or use root.
 
-**Run the ``setup.bash`` script**
+**Run the ``setup.bash`` script:**
 This script will:
 
 1. Install all the operating system packages needed
@@ -103,15 +103,15 @@ During the execution you will be prompted for a few items:
 
     ``MySQL user (should already exist):``
 
-Enter the user you created or `root` if you used ```mysql_secure_installation```
+    Enter the user you created or `root` if you used ```mysql_secure_installation```.
 
-   ``Password for user:``
+    ``Password for user:``
 
-Enter the password for the MySQL user you selected.
+    Enter the password for the MySQL user you selected.
 
     ``Database name (should NOT exist):``
 
-Select a name for the DefectDojo database.
+    Select a name for the DefectDojo database.
 
 **All the packages**
 
@@ -128,7 +128,7 @@ It may take some time for all the `OS` and `python` packages to be installed. As
 
 The ``python`` packages are listed in ``requirements.txt``.
 
-After all the components have been installed, the `makemigrations` process will prompt you to create a ``superuser``
+After all the components have been installed, the `makemigrations` process will prompt you to create a ``superuser``:
 
 .. code-block:: shell-session
 
@@ -139,7 +139,7 @@ Answer `yes` and follow the prompts, this will be the user you will use to login
 
 #. *(OPTIONAL)* If you haven't already, run `mysql_secure_install` to set a password for your root MySQL user.
 #. Edit the settings.py file to modify any other settings that you want to change, such as your SMTP server information, which we leave off by default.
-#. When you are ready to run DefectDojo, run the server with ``./run_dojo.bash``
+#. When you are ready to run DefectDojo, run the server with ``./run_dojo.bash``.
 
 Environment Variables
 ~~~~~~~~~~~~~~~~~~~~~
@@ -179,7 +179,7 @@ DD_ALLOWED_HOSTS
     Hosts/domain names that are valid for this site; If DEBUG is False, default is localhost/127.0.0.1
 
 DD_DATABASE_URL
-    Database connections are expressed as URL's conforming to the 12factor approach
+    Database connections are expressed as URL's conforming to the 12factor approach:
 
     * MySQL: mysql://user:password@host:port/database
     * MySQL example: ``export DD_DATABASE_URL=mysql://root:password@127.0.0.1:3306/dojodb``
